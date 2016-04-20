@@ -1,0 +1,46 @@
+<div style="margin-top:30px" class="container">
+    <h1 class="title"><a href="/"><img src="http://floridasalsafest.com/wp-content/uploads/2016/04/publix-logo-150x150.png"/></a></h1>
+    <h2 class="subtitle">Where shopping is a pleasure.</h2>
+</div>
+
+
+
+<br>
+<br>
+
+<section class="section">
+    <div class="container">
+      <div class="heading">
+        <h1 class="title">Contact Us</h1>
+        <h2 class="subtitle">
+            <p>Address: 3339 W 80th St, Hialeah, FL 33018</p>
+            <p>Phone Number: (305) 819-2600</p>
+            <p>Hours: 7AM–11PM</p>
+            <p></p>
+            <p></p>
+
+
+        </h2>
+      </div>
+    </div>
+</section>
+<br>
+
+<div ng-controller="contact" class= "container">
+    <label class="label">Name</label>
+    <p class="control">
+        <input ng-model="fullname" class="input is-success" type="text" placeholder="Text input" id="fullname">
+    </p>
+    <label class="label">Email</label>
+    <p class="control has-icon has-icon-right">
+        <input ng-model="email"  class="input is-success" type="text" placeholder="Email" id="email" >
+    </p>
+    <label class="label">Message</label>
+    <p class="control">
+        <textarea ng-model="message" class="textarea" placeholder="Message" id="message"></textarea>
+    </p>
+    <p class="control">
+        <button ng-click="contactinfo();" class="button is-primary">Submit</button>
+        <button ng-click="clear();" class="button is-link">Cancel</button>
+    </p>
+</div>
